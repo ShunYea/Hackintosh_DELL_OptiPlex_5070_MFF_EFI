@@ -9,3 +9,17 @@ Dell OptiPlex 5070 Hackintosh OpenCore EFI
 - CPU：i9-9900T
 - 网卡：黑苹果博通
 - MacOS：12.7.3
+
+## BIOS设置 ##
+这个很重要：
+- General - Advanced Boot Options 取消勾选 Enable Legacy Option ROMs
+- System Configuration - SATA Operation 选择 AHCI
+- Video - Primary Display 选择 Intel HD Graphics
+- Secure Boot - Secure Boot Enable 取消勾选 Secure Boot Enable
+- Intel Software Guard Extensions - Intel SGX Enable 选择 Disabled
+- Virtualization Support - Virtualization 勾选 Enable Intel Virtualization Technology
+- Virtualization Support - VT for Direct I/O 取消勾选 Enable VT for Direct I/O
+
+使用grub工具进命令行设置：
+- 关闭CFG Lock：setup_var 0x5BE 0x0
+- 设置64M预分配显存：setup_var 0x8DC 0x2
