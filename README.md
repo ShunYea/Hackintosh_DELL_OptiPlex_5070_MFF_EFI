@@ -8,7 +8,8 @@ Dell OptiPlex 5070 Hackintosh OpenCore EFI
 ## 配置 ##
 - CPU：i9-9900T
 - 网卡：黑苹果博通
-- MacOS：12.7.3
+- MacOS：12.7.6
+- OpenCore 1.0.0
 
 ## BIOS设置 ##
 这个很重要：
