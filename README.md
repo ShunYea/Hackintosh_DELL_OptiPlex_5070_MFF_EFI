@@ -20,6 +20,7 @@ Dell OptiPlex 5070 Hackintosh OpenCore EFI
 - Intel Software Guard Extensions - Intel SGX Enable 选择 Disabled
 - Virtualization Support - Virtualization 勾选 Enable Intel Virtualization Technology
 - Virtualization Support - VT for Direct I/O 取消勾选 Enable VT for Direct I/O
+- Power Management - Block Sleep 勾选（非常重要，重置了BIOS后这个没设置，一直造成只要一睡眠就重启……）
 
 使用grub工具进命令行设置：
 - 关闭CFG Lock：setup_var 0x5BE 0x0
